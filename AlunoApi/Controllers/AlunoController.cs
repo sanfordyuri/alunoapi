@@ -1,14 +1,16 @@
-﻿using System;
-using System.Linq;
-using AlunoApi.Data;
+﻿using AlunoApi.Data;
 using AlunoApi.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Linq;
+using System.Web.Http.Cors;
 
 namespace AlunoApi.Controllers
 {
 
     [ApiController]
     [Route("Aluno")]
+    [EnableCors(origins: "http://localhost:3000", headers: "*", methods: "*")]
     public class AlunoController : ControllerBase
     {
 
@@ -27,6 +29,7 @@ namespace AlunoApi.Controllers
         }
 
         [HttpGet]
+
         public IActionResult RetornarAlunos()
         {
             return Ok(_context.alunos);
