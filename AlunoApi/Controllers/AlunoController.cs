@@ -10,7 +10,6 @@ namespace AlunoApi.Controllers
 
     [ApiController]
     [Route("Aluno")]
-    [EnableCors(origins: "http://localhost:3000", headers: "*", methods: "*")]
     public class AlunoController : ControllerBase
     {
 

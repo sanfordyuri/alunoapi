@@ -19,10 +19,6 @@ namespace AlunoApi
             Configuration = configuration;
         }
 
-        public static void Register(HttpConfiguration config)
-        {
-            config.EnableCors();
-        }
 
         public IConfiguration Configuration { get; }
 

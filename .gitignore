@@ -87,6 +87,7 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+*.suo
 
 # Files built by Visual Studio Code
 .vscode/
